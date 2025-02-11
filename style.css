@@ -1,0 +1,683 @@
+/*-------page Styles -------*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+    background-color: white;
+    color: black;
+}
+
+/*------- Header Styles -------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+/*------- Navigation Bar Styles -------*/
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 2px 20px;
+}
+
+nav ul li a:hover {
+    background-color: red;
+    border-radius: 2px;
+}
+
+nav ul li a.active {
+    color: gray;
+}
+
+/*------- main Section Styles -------*/
+.hero {
+    position: relative;
+    background-image: url('dog2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .ovy {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 110px;
+    border: 2px solid white;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 35px;
+    margin: 0;
+}
+
+.hero pre {
+    color: white;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0px 70px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid red;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: white;
+}
+
+/*------- Footer Styles -------*/
+
+.footercontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+}
+
+.footersection {
+    width: 25%;
+    padding: 30px;
+    text-align: left;
+}
+
+.footersection2 {
+    width: 25%;
+    padding: 30px;
+    text-align: center;
+}
+
+.footersection h3, .footersection p {
+    margin: 10px 0;
+}
+
+.footersection a {
+    color: white;
+    text-decoration: none;
+}
+
+.footersection a:hover {
+    text-decoration: underline;
+}
+
+.footerbottom {
+    text-align: center;
+    padding: 10px;
+    background-color: grey;
+    font-size: 0.8em;
+	color:white;
+}
+
+.roundimage {
+    border-radius: 50%;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid red;
+    background-position: center;
+}
+
+.roundimage2 {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    background-position: left;
+}
+
+.mapcontainer iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+.contactinfo {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contactinfo div {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contactinfo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contactinfo span {
+    flex: 1;
+}
+.location{
+		 border-radius: 90%;
+ margin-right: 10px;
+    background: url('css_sprites1.png') -0px -0px;
+	
+}
+.tel{
+		 border-radius: 90%;
+ margin-right: 10px;
+    background: url('css_sprites2.png') -0px -0px;
+	
+}
+.email{
+		 border-radius: 90%;
+ margin-right: 10px;
+    background: url('css_sprites3.png') -0px -0px;
+	
+}
+/*------- Services Page Styles -------*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+	height:550px;
+    justify-content: space-between;
+}
+.item {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+	
+}
+.button {
+    display: inline-block;
+    background-color: #f0c000;
+    border: none;
+    float: right;
+    padding: 10px 90px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    letter-spacing: 5px;
+}
+
+.button:hover {
+    background-color: #e0b000;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f0c000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+	font-family: "Arial";
+}
+
+.description {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: black;
+}
+
+
+
+/*------- Dog Hotel Page Styles -------*/
+
+.hero2 {
+    position: relative;
+    background-image: url('dog1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bform {
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 5px solid green;
+    width: 600px;
+    height: 650px;
+    background-color: #ffffff96;
+}
+
+.Bform  h1 {
+    margin-bottom: 20px;
+    color: yellow;
+    font-size: 40px;
+}
+
+.Bform  label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.Bform  input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.btn3:hover {
+    background-color: darkred;
+}
+
+.btn3 {
+    display: inline-block;
+    padding: 10px 40px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid red;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/*------- About Page Styles -------*/
+
+.aboutA {
+    text-align: left;
+    margin-left: 20%;
+    letter-spacing: 5px;
+}
+
+.hrA {
+    margin-left: 20%;
+    float: left;
+    height: 4px;
+    width: 200px;
+    background-color: black;
+    border: none;
+    margin-top: -20px;
+}
+
+.RowA {
+    width: 80%;
+    height: 650px;
+    position: relative;
+    padding: 0% 10% 0% 10%;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CalA {
+    height: 650px;
+       width: 450px;
+    justify-content: space-between;
+}
+
+.CalA2 {
+    height: 500px;
+    width: 450px;
+    justify-content: space-between;
+}
+
+.br1 {
+    width: 1px;
+    height: 40px;
+    background-color: #181818;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img {
+    background-image: url('dog3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 530px;
+}
+
+.TextA {
+    text-align: center;
+    float: right;
+    width: 30%;
+    padding: 5% 10% 0% 10%;
+}
+
+.TextpA {
+    font-weight: 200;
+    margin-top: 40px;
+}
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lcol {
+    display: inline-flex;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.btn2 {
+    width: 150px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnA {
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+	background-color: white;
+}
+
+.btnA:hover {
+    border: green solid 2px;
+    cursor: help;
+}
+
+.br2{
+    margin-top: 20px;
+    width: 270px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+}
+.br3{
+    margin-top: 20px;
+    width: 270px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-sprite{
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    padding: 2px;
+}
+
+.col-sprite1{
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+	 margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+.facebook{
+
+    background: url('css_sprites.png') -3px -5px;
+}
+
+.facebook:hover{
+
+    background-image: url('css_spritesd.png');
+}
+
+
+.instargram{
+    background: url('css_sprites.png') -60px -5px;
+}
+
+.instargram:hover{
+    background-image: url(css_spritesd.png);
+}
+
+.youtube{
+
+    background: url('css_sprites.png') -120px -5px;
+}
+
+.youtube:hover{
+
+    background-image: url(css_spritesd.png);
+}
+
+.whatsapp{
+
+    background: url('css_sprites.png') -177px -5px;
+}
+
+.whatsapp:hover{
+    background-image: url(css_spritesd.png);
+}
+
+
+
+
+/*------- Review Page Styles -------*/
+
+
+.footerR {
+    position: relative;
+    bottom: 10px;
+}
+
+.boxR {
+    width: 80%;
+    padding: 20px 10% 5% 10%;
+    background-color: rgb(133, 133, 133);
+    position: relative;
+    top: 20px;
+    bottom: 10px;
+}
+
+.img1 {
+    background-image: url('girl1.jpg');
+}
+
+.img2 {
+    background-image: url('men.jpeg');
+}
+
+.img3 {
+    background-image: url('dog4.jpeg');
+}
+
+.boxR h2 {
+    color: yellow;
+}
+
+.boxR h2 span {
+    font-size: 35px;
+}
+
+.hr {
+    width: 200px;
+    margin-left: 0px;
+    margin-top: -20px;
+    height: 5px;
+    background-color: white;
+    border: none;
+}
+
+.rowR {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+.Name {
+    font-weight: 200;
+}
+
+.ct {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #181818;
+    cursor: pointer;
+}
+
+.calR {
+    width: 23%;
+    padding: 30px 55px 50px 55px;
+    text-align: center;
+    margin-left: 15px;
+    border: #181818 solid 2px;
+    display: inline-block;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px black;
+}
+
+.Info {
+    font-family: "Yu Gothic", cursive;
+    font-weight: 300;
+}
+
+/*------- Contact Us Page Styles -------*/
+
+
+.contactus2 {
+    background-color: rgb(47, 154, 190);
+    padding: 4% 10% 10% 10%;
+}
+
+.contactus2 h1 span {
+    font-size: 45px;
+}
+.hr2 {
+    height: 5px;
+    width: 250px;
+    background-color: #000000;
+    float: left;
+    margin-top: -20px;
+    border: none;
+}
+
+.Input2 {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+}
+
+.Input2:focus {
+    background-color: rgb(237, 237, 85);
+}
+
+
+
+input:required::after {
+    
+    color: red;
+}
+
+.submit2 {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(251, 209, 0);
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.mback {
+    border: solid 1px black;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.mback:focus {
+    background-color: rgb(237, 237, 85);
+}
+
+
